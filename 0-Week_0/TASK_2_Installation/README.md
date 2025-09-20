@@ -157,17 +157,7 @@ magic -v
 
 ---
 
-## ✅ Summary
 
-After following the above steps, you should have the following tools successfully installed and verified on your system:
-
-* [x] Yosys
-* [x] Icarus Verilog
-* [x] GTKWave
-* [x] NgSpice
-* [x] Magic
-
----
 
 
    
