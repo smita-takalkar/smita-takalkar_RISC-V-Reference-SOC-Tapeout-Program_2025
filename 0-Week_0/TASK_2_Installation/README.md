@@ -214,7 +214,7 @@ After reboot:
 docker run hello-world
 ```
 
-📸 *Snapshot: Docker hello-world *
+📸 *Snapshot: Docker hello-world * <br/>
 <img width="866" height="629" alt="DOCKER_Screenshot from 2025-09-20 18-54-50" src="https://github.com/user-attachments/assets/08e4a9c0-d337-4a05-873f-a42bd4fca492" />
 
 
@@ -233,7 +233,7 @@ make --version
 python3 -m venv -h
 ```
 
-📸 *Snapshots for each version check output*
+📸 *Snapshots for each version check output* <br/>
 <img width="1214" height="768" alt="Dependencies_Screenshot from 2025-09-20 18-59-11" src="https://github.com/user-attachments/assets/44234805-5b32-4536-be82-59238c66ff6b" />
 
 
@@ -249,7 +249,7 @@ make
 make test
 ```
 
-📸 *Snapshot: 
+📸 *Snapshot:* <br/>
 <img width="866" height="670" alt="OpenLane_Screenshot from 2025-09-20 20-38-13" src="https://github.com/user-attachments/assets/699fd607-e366-45e2-afce-2143ec928089" />
 
 ---
