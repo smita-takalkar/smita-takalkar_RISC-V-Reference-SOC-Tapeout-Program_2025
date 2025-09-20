@@ -41,7 +41,8 @@ sudo make install
 ```bash
 yosys --version
 ```
-📸 Snapshot:<img width="866" height="629" alt="YOSYS_Screenshot from 2025-09-20 11-16-43" src="https://github.com/user-attachments/assets/9502190d-39aa-4392-8242-8ca8576b4e6c" />
+📸 Snapshot:
+<img width="866" height="629" alt="YOSYS_Screenshot from 2025-09-20 11-16-43" src="https://github.com/user-attachments/assets/9502190d-39aa-4392-8242-8ca8576b4e6c" />
 
 
 ---
@@ -62,7 +63,8 @@ sudo apt-get install iverilog
 ```bash
 iverilog -v
 ```
-📸 Snapshot:<img width="1214" height="768" alt="IVerilog_Screenshot from 2025-09-20 11-36-29" src="https://github.com/user-attachments/assets/10f9c7c8-2528-4d15-8906-819ef40e551d" />
+📸 Snapshot:
+<img width="1214" height="768" alt="IVerilog_Screenshot from 2025-09-20 11-36-29" src="https://github.com/user-attachments/assets/10f9c7c8-2528-4d15-8906-819ef40e551d" />
 
 
 
@@ -115,7 +117,8 @@ sudo make install
 ```bash
 ngspice -v
 ```
-📸 Snapshot:<img width="1214" height="768" alt="NgSpice_Screenshot from 2025-09-20 12-10-36" src="https://github.com/user-attachments/assets/20658229-466e-4988-bd52-3997ed86ca14" />
+📸 Snapshot:
+<img width="1214" height="768" alt="NgSpice_Screenshot from 2025-09-20 12-10-36" src="https://github.com/user-attachments/assets/20658229-466e-4988-bd52-3997ed86ca14" />
 
 
 ---
@@ -148,7 +151,8 @@ sudo make install
 ```bash
 magic -v
 ```
-📸 Snapshot:<img width="1280" height="800" alt="Magic_Screenshot from 2025-09-20 12-20-55" src="https://github.com/user-attachments/assets/37c4c23e-f971-4431-8335-5033e3323407" />
+📸 Snapshot:
+<img width="1280" height="800" alt="Magic_Screenshot from 2025-09-20 12-20-55" src="https://github.com/user-attachments/assets/37c4c23e-f971-4431-8335-5033e3323407" />
 
 
 ---
