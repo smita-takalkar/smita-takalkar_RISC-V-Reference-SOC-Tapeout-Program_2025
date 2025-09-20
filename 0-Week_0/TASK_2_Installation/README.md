@@ -156,6 +156,104 @@ magic -v
 
 
 ---
+## 6. OpenLane Installation         
+
+### Step 1: Update System
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+````
+
+---
+
+### Step 2: Install Essential Packages
+
+```bash
+sudo apt install -y build-essential python3 python3-venv python3-pip make git
+sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+```
+
+---
+
+### Step 3: Install Docker
+
+```bash
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o \
+/usr/share/keyrings/docker-archive-keyring.gpg
+
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] \
+https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | \
+sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt update
+sudo apt install -y docker-ce docker-ce-cli containerd.io
+```
+
+---
+
+### Step 4: Verify Docker Installation
+
+```bash
+sudo docker run hello-world
+```
+
+
+---
+
+### Step 5: Manage Docker Permissions
+
+```bash
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo reboot
+```
+
+After reboot:
+
+```bash
+docker run hello-world
+```
+
+📸 *Snapshot: Docker hello-world *
+<img width="866" height="629" alt="DOCKER_Screenshot from 2025-09-20 18-54-50" src="https://github.com/user-attachments/assets/08e4a9c0-d337-4a05-873f-a42bd4fca492" />
+
+
+---
+
+### Step 6: Verify Dependencies
+
+Run the following commands to confirm installation:
+
+```bash
+git --version
+docker --version
+python3 --version
+python3 -m pip --version
+make --version
+python3 -m venv -h
+```
+
+📸 *Snapshots for each version check output*
+<img width="1214" height="768" alt="Dependencies_Screenshot from 2025-09-20 18-59-11" src="https://github.com/user-attachments/assets/44234805-5b32-4536-be82-59238c66ff6b" />
+
+
+---
+
+### Step 7: Install OpenLane, PDKs, and Tools
+
+```bash
+cd $HOME
+git clone https://github.com/The-OpenROAD-Project/OpenLane
+cd OpenLane
+make
+make test
+```
+
+📸 *Snapshot: 
+<img width="866" height="670" alt="OpenLane_Screenshot from 2025-09-20 20-38-13" src="https://github.com/user-attachments/assets/699fd607-e366-45e2-afce-2143ec928089" />
+
+---
+
 
 
 
