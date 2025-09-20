@@ -8,5 +8,6 @@ Installation of following tools on ORACLE VIRTUAL MACHINE:
 2. Iverilog
 3. GTKWave
 4. Ngspice
-6. MAGIC
+5. MAGIC
+6. OpenLane
 
