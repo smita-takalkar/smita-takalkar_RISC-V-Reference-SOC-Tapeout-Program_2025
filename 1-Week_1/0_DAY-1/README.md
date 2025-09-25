@@ -1,4 +1,4 @@
-DAY 1 
+# DAY 1 
 # SKY130 RTLD1SK1 L1 – Introduction to Icarus Verilog (iverilog) and Testbench
 
 ## Introduction
