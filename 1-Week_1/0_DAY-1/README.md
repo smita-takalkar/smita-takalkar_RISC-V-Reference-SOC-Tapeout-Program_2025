@@ -63,7 +63,8 @@ In this course, we use **Yosys** as the synthesizer.
 
 ## 2. Yosys Flow
 
-![yosys_flow.png](attachment:73866c11-8cc8-4ed2-8be0-842b1734cd06:26629192-68e7-40f7-b0de-c5ebb423633a.png)
+<img width="1920" height="1080" alt="Screenshot 2025-09-25 221441" src="https://github.com/user-attachments/assets/3fa9491a-0791-49e0-a384-c965afffd4d9" />
+
 
 * The RTL design is translated into gates and mapped using the standard cells present in the `.lib`.
 * The final output is a **netlist file**.
@@ -72,7 +73,8 @@ In this course, we use **Yosys** as the synthesizer.
 
 ## 3. Verification of Synthesis
 
-![image.png](attachment:5e9cc936-53eb-4f72-8bd8-280600fe6ab0:image.png)
+<img width="1920" height="1080" alt="Screenshot 2025-09-25 221738" src="https://github.com/user-attachments/assets/5e681747-e2b1-4d37-b077-d6e1a18ec42d" />
+
 
 * The **primary inputs and outputs** remain the same between RTL and synthesized netlist.
 * The same testbench can be reused for both RTL and netlist verification.
@@ -89,7 +91,8 @@ Logic synthesis is the process of converting **RTL design** into **gate-level de
 2. Translate into gates.
 3. Connect gates to form the equivalent circuit.
 4. Generate the **netlist**.
-![iverification.png](attachment:00e0d4a5-275c-4897-8661-ff0888e90943:image.png)
+<img width="599" height="877" alt="Screenshot 2025-09-25 223732" src="https://github.com/user-attachments/assets/0ce2bb99-d990-4109-a123-137dfd881981" />
+
 
 ---
 
