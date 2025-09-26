@@ -121,10 +121,89 @@ These stable outputs are then passed on to subsequent stages in the digital circ
 
 ---
 
+
+# Optimization in Synthesis: Multiplication by 2 and 8
+
+## 1. Introduction
+When we multiply signals by constants that are **powers of 2**, synthesis tools do not generate full multipliers.  
+Instead, they optimize the operation into **shift-left operations**, which are much more efficient.  
+
+This optimization reduces **area, power, and delay** in the synthesized hardware.
+
+---
+
+## 2. Multiplication by 2 (`mul2`)
+### RTL Code
+```verilog
+y = a * 2;
+````
+
+### Optimized Logic
+
+```verilog
+y = a << 1;   // shift left by 1
+```
+
+* A multiplication by `2` in binary is equivalent to **shifting all bits left by 1**.
+* No multiplier is needed; just rewiring of bits.
+
+### Diagram
+
+mul2 → Shift left by 1
+<img width="1600" height="900" alt="mul2" src="https://github.com/user-attachments/assets/da939b77-7e4d-44ee-917d-bdfdb09a9e5a" />
+
+
+---
+
+## 3. Multiplication by 8 (`mul8`)
+
+### RTL Code
+
+```verilog
+y = a * 8;
+```
+
+### Optimized Logic
+
+```verilog
+y = a << 3;   // shift left by 3
+```
+
+* `8` in binary = `1000` = $2^3$.
+* Equivalent to shifting the operand **left by 3 bits**.
+* Again, no multiplier hardware is required.
+
+### Diagram
+
+mul8 → Shift left by 3
+<img width="1600" height="900" alt="mul8" src="https://github.com/user-attachments/assets/3748e43f-3d06-499b-ae87-3e4f092efbc1" />
+
+
+---
+
+## 4. Why This Optimization Matters
+
+* A **multiplier** is expensive in hardware (many gates).
+* A **shift-left** is free (just rewiring).
+* This optimization significantly saves:
+
+  * **Area**
+  * **Power**
+  * **Timing delay**
+
+---
+
+
+
+
 ## Summary
 On **Day 2**, we explored:
 1. **Timing Libraries** (`.lib`) → Structure, PVT variations, and units.  
 2. **Hierarchical vs Flat Synthesis** → Trade-offs between optimization and modularity.  
-3. **Flop Coding Styles** → Handling glitches and coding different reset/set configurations.  
+3. **Flop Coding Styles** → Handling glitches and coding different reset/set configurations.
+4. * `mul2` → optimized to `a << 1`
+* `mul8` → optimized to `a << 3`
+* Synthesis automatically applies these transformations for constant multiplications by powers of 2.
+* Result: **efficient hardware implementation** with reduced area, power, and delay.
 
 
