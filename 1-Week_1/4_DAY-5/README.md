@@ -138,12 +138,12 @@ endgenerate
 
 ## 📌 Key Takeaways
 
-✨ Always complete IF/CASE to avoid **latches**
-✨ Add `default` in CASE
-✨ Avoid overlapping CASE branches
-✨ IF → **priority**, CASE → **parallel**
-✨ FOR → inside `always` (behavioral)
-✨ Generate → outside `always` (structural)
+✨ Always complete IF/CASE to avoid **latches** <br/>
+✨ Add `default` in CASE <br/>
+✨ Avoid overlapping CASE branches <br/>
+✨ IF → **priority**, CASE → **parallel** <br/>
+✨ FOR → inside `always` (behavioral) <br/>
+✨ Generate → outside `always` (structural) <br/>
 
 ---
 
