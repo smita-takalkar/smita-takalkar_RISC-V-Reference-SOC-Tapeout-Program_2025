@@ -80,26 +80,7 @@ end
 
 ---
 
-## 🧪 2. Labs on IF
-
-* `D5SK2 L1` → Incomplete IF (part 1)
-* `D5SK2 L2` → Incomplete IF (part 2)
-  🔍 **Focus**: Inferred latches due to missing else conditions.
-
----
-
-## 🧪 3. Labs on CASE
-
-* `D5SK3 L1` → Incomplete/Overlapping CASE (part 1)
-* `D5SK3 L2` → Incomplete/Overlapping CASE (part 2)
-* `D5SK3 L3` → Incomplete/Overlapping CASE (part 3)
-* `D5SK3 L4` → Incomplete/Overlapping CASE (part 4)
-
-🔍 **Focus**: Missing defaults & overlapping conditions → simulation vs synthesis mismatch.
-
----
-
-## 🔄 4. Looping Constructs
+## 🔄 Looping Constructs
 
 ### 🔹 FOR Loop
 
