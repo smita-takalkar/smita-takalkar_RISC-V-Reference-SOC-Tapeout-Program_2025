@@ -1,86 +1,60 @@
 # Week 2 – BabySoC Fundamentals & Functional Modelling
 
-## My Notes
+## 🎯 Objective  
+To build a **solid understanding of SoC fundamentals** and practice **functional modelling of BabySoC** using open-source simulation tools:  
+- [Icarus Verilog](http://iverilog.icarus.com/) for compiling & simulating Verilog  
+- [GTKWave](http://gtkwave.sourceforge.net/) for waveform analysis  
 
-### 🔹 What is SoC?
+---
+##This week's task are divided into two parts as:
+## 📘 Part 1 – Theory (Conceptual Understanding)  
 
-* A **System-on-Chip (SoC)** = complete computing system packed inside a single chip.
-* Combines **CPU + Memory + Peripherals + Interconnect**.
-* Advantage → smaller, faster, consumes less power compared to separate components.
-* Examples → processors inside smartphones, IoT devices, embedded boards.
+### Topics to Focus On  
+- **What is a System-on-Chip (SoC)?**  
+  A SoC integrates multiple components such as CPU, memory, peripherals, and interconnects on a single chip, enabling efficient and compact designs.  
+
+- **Components of a Typical SoC**  
+  - **CPU** → Processing unit  
+  - **Memory** → Stores instructions/data  
+  - **Peripherals** → Interfaces like UART, GPIO, DAC/ADC  
+  - **Interconnect** → Communication backbone (bus/NoC)  
+
+- **Why BabySoC?**  
+  BabySoC is a **simplified RISC-V based SoC** designed for learning.  
+  - Easy to understand for beginners  
+  - Integrates **RVMYTH CPU + PLL + DAC**  
+  - Helps grasp SoC design flow without the complexity of large SoCs  
+
+- **Role of Functional Modelling**  
+  - First step before RTL and physical design  
+  - Ensures correctness of design intent and module interactions  
+  - Reduces errors in later synthesis and layout stages  
+
+### 📄 Deliverable  
+- A **1–2 page write-up** summarizing SoC design fundamentals and BabySoC’s role in this learning journey.  
+- This document will be included in the `theory/` folder of this repo.  
 
 ---
 
-### 🔹 Components of a Typical SoC
+## 🧪 Part 2 – Labs (Functional Modelling)  
 
-1. **CPU (Core)** → executes instructions, brain of the chip.
-2. **Memory** → program + data storage (SRAM/DRAM/Flash).
-3. **Peripherals** → UART, GPIO, timers etc. for external communication.
-4. **Interconnect/Bus** → backbone for CPU ↔ Memory ↔ Peripherals communication.
+Hands-on modelling and simulation using BabySoC project.  
 
----
+**Steps:**  
+1. Clone the BabySoC project repo  
+2. Compile Verilog modules with **iverilog**  
+3. Run simulation and generate `.vcd` waveforms  
+4. Analyze results in **GTKWave**:  
+   - Reset operation  
+   - Clocking  
+   - Dataflow between modules  
+5. Document observations with **waveform screenshots + explanations**  
 
-### 🔹 Why BabySoC?
-
-* It’s a **learning-friendly version** of SoC.
-* Has **minimal blocks** (small CPU, simple memory, basic I/O).
-* Helps me:
-
-  * Understand **block-level interactions** clearly.
-  * Trace **data flow** without too much complexity.
-  * Build a strong **foundation before diving into real SoCs**.
-
-So, BabySoC is like the **training wheels** for SoC design 🚲.
-
----
-
-### 🔹 Functional Modelling – Role in Design Flow
-
-* Comes **before RTL and Physical Design**.
-* Purpose:
-
-  * Check **basic functionality** of the SoC.
-  * Validate that CPU, memory, and peripherals interact as expected.
-  * Find design-level mistakes early (cheaper to fix now than later).
-* Tools:
-
-  * **Icarus Verilog (iverilog)** → simulate the Verilog code.
-  * **GTKWave** → visualize waveforms, debug signal transitions.
-
-Basically → **functional model = reference blueprint** before jumping into actual RTL implementation.
+### 📦 Deliverables  
+- Simulation logs  
+- `.vcd` waveform dumps  
+- Screenshots (Reset, Clocking, Dataflow)  
+- Short explanation for each  
 
 ---
 
-### 🔹 SoC Design Flow (big picture)
-
-1. **Functional Modelling** → BabySoC stage, check high-level behavior.
-2. **RTL Design** → describe actual logic in Verilog/VHDL.
-3. **Synthesis** → convert RTL to gate-level netlist.
-4. **Physical Design** → layout, placement, routing → chip ready for fabrication.
-
-BabySoC = Step 1 → gives me clarity & confidence before deeper RTL work.
-
----
-
-## Quick Block View (BabySoC Idea)
-
-```
-   +---------+       +---------+       +------------+
-   |  CPU    | <---> | Memory  | <---> | Peripherals|
-   +---------+       +---------+       +------------+
-          \__________________  __________________/
-                           |  Interconnect/Bus  |
-                           +--------------------+
-```
-
----
-
-## ✅ Key Takeaways
-
-* SoC = CPU + Memory + Peripherals + Interconnect → all in 1 chip.
-* BabySoC is a **minimal learning SoC**, easy to simulate & debug.
-* Functional modelling = **first step** in SoC design flow.
-* Tools: **iverilog + GTKWave** = simulate + view waveforms.
-* BabySoC learning prepares me for **real SoC RTL + VLSI flow**.
-
----
