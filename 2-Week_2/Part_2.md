@@ -1,9 +1,5 @@
-
-
-
 #  VSDBabySoC – Functional Modelling, Synthesis & Simulation  
 
-This document explains how to clone, simulate, synthesize, and analyze the **VSDBabySoC** project using **open-source tools** such as Icarus Verilog, GTKWave, SandPiper-SaaS, and Yosys.  
 
 ---
 
@@ -144,4 +140,3 @@ gtkwave output/post_synth_sim/post_synth_sim.vcd
 🚀 This completes the **BabySoC functional modelling → synthesis → GLS flow**.
 
 ```
-
