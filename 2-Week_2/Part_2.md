@@ -75,6 +75,7 @@ make pre_synth_sim
 ```bash
 gtkwave output/pre_synth_sim/pre_synth_sim.vcd
 ```
+<img width="1600" height="900" alt="pre_synth_sim" src="https://github.com/user-attachments/assets/02a72c4b-ae1f-4147-b8f6-2ca916cf98e8" />
 
 **Signals Observed:**
 
@@ -102,14 +103,8 @@ yosys> write_verilog vsdbabysoc.synth.v
 yosys> abc -liberty ./src/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
 yosys> show vsdbabysoc
 ```
+<img width="1600" height="900" alt="vsdbabysoc_yosys_synth" src="https://github.com/user-attachments/assets/4fe22d74-d681-4e34-aba3-707c1fc3d941" />
 
-**Explanation:**
-
-* `read_liberty` → Load standard cell libraries and IP timing models.
-* `synth -top vsdbabysoc` → Run synthesis with top module as `vsdbabysoc`.
-* `write_verilog vsdbabysoc.synth.v` → Save synthesized netlist.
-* `abc` → Perform technology mapping using the library.
-* `show` → Open schematic view.
 
 ---
 
@@ -133,6 +128,8 @@ make post_synth_sim
 ```bash
 gtkwave output/post_synth_sim/post_synth_sim.vcd
 ```
+<img width="1600" height="900" alt="post_synth_sim" src="https://github.com/user-attachments/assets/5ba0437b-4da9-4292-a635-5b138094cfeb" />
+
 
 **Signals Observed:**
 
@@ -143,14 +140,6 @@ gtkwave output/post_synth_sim/post_synth_sim.vcd
 * **OUT (real)** → DAC analog output (simulated as real datatype).
 
 ---
-
-## 🎯 Summary
-
-* ✅ Cloned and set up the VSDBabySoC project
-* ✅ Converted TL-Verilog to Verilog using SandPiper-SaaS
-* ✅ Performed **pre-synthesis simulation** and observed signals
-* ✅ Ran **RTL synthesis with Yosys** and technology mapping with ABC
-* ✅ Performed **post-synthesis simulation (GLS)** and verified outputs
 
 🚀 This completes the **BabySoC functional modelling → synthesis → GLS flow**.
 
