@@ -19,8 +19,33 @@
 4. **Interconnect/Bus** → backbone for CPU ↔ Memory ↔ Peripherals communication.
 
 ---
+# 🔎 Introduction to VSDBabySoC  
 
-### 🔹 Why BabySoC?
+**VSDBabySoC** is a small yet powerful **RISC-V based SoC**, designed as a simplified platform to explore and test SoC concepts.  
+Its primary goal is to:  
+- Integrate and validate **three open-source IP cores** together for the first time.  
+- Provide a platform to **calibrate and interact with analog parts** of the design.  
+
+### 🧩 Components of VSDBabySoC  
+1. **RVMYTH Microprocessor**  
+   - A simple RISC-V based CPU introduced in a workshop by **RedwoodEDA** and **VSD**.  
+   - Built in just **5 days** by students (even middle-schoolers!) using **TL-Verilog (TLV)** for rapid development.  
+   - Ongoing contributions are open-source, encouraging community-driven development.  
+
+2. **8x PLL (Phase-Locked Loop)**  
+   - A control system that generates a stable output clock signal, phase-locked to the input reference clock.  
+   - Essential for **clock generation and synchronization** within the SoC.  
+
+3. **10-bit DAC (Digital-to-Analog Converter)**  
+   - Converts **digital signals → analog signals**.  
+   - Widely used in communication systems for generating transmission signals.  
+   - Enables VSDBabySoC to interface with external **analog devices**.  
+
+---
+<img width="2270" height="1260" alt="vsdbabysoc_block_diagram" src="https://github.com/user-attachments/assets/d49cc262-ce4e-4b68-b96d-b589dc7c6c86" />
+
+
+### 🔹 Why BabySoCis a simplified model for learning SoC concepts?
 
 * It’s a **learning-friendly version** of SoC.
 * Has **minimal blocks** (small CPU, simple memory, basic I/O).
@@ -30,7 +55,6 @@
   * Trace **data flow** without too much complexity.
   * Build a strong **foundation before diving into real SoCs**.
 
-So, BabySoC is like the **training wheels** for SoC design 🚲.
 
 ---
 
@@ -51,29 +75,7 @@ Basically → **functional model = reference blueprint** before jumping into act
 
 ---
 
-### 🔹 SoC Design Flow (big picture)
 
-1. **Functional Modelling** → BabySoC stage, check high-level behavior.
-2. **RTL Design** → describe actual logic in Verilog/VHDL.
-3. **Synthesis** → convert RTL to gate-level netlist.
-4. **Physical Design** → layout, placement, routing → chip ready for fabrication.
-
-BabySoC = Step 1 → gives me clarity & confidence before deeper RTL work.
-
----
-
-## Quick Block View (BabySoC Idea)
-
-```
-   +---------+       +---------+       +------------+
-   |  CPU    | <---> | Memory  | <---> | Peripherals|
-   +---------+       +---------+       +------------+
-          \__________________  __________________/
-                           |  Interconnect/Bus  |
-                           +--------------------+
-```
-
----
 
 ## ✅ Key Takeaways
 
