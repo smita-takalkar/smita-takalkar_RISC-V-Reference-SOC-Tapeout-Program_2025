@@ -191,10 +191,10 @@ gtkwave post_synth_sim.vcd
 <img width="1600" height="900" alt="Synthesis_logs13" src="https://github.com/user-attachments/assets/3489d577-3768-4b9a-8ac4-35bfe05c4e15" />
 <img width="1600" height="900" alt="Synthesis_logs14" src="https://github.com/user-attachments/assets/801bc617-6e20-4931-9778-89fa82e0bdac" />
 
-####Functional simulation output (Week 2 task):
+#### Functional simulation output (Week 2 task):
 <img width="1600" height="900" alt="post_synth_sim" src="https://github.com/user-attachments/assets/03e98ceb-245d-44af-a2e9-6e1ad1ca7ccc" />
 
-###The waveforms obtained from GLS matched exactly with those from the functional simulation, confirming that the synthesized netlist preserves the original RTL functionality.
+### The waveforms obtained from GLS matched exactly with those from the functional simulation, confirming that the synthesized netlist preserves the original RTL functionality.
 
 This indicates that:
 
