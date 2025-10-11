@@ -1,4 +1,4 @@
-# 🧩 Week 3 – Post-Synthesis Gate-Level Simulation (GLS) of BabySoC
+# 🧩 Week 3 | PART 1 – Post-Synthesis Gate-Level Simulation (GLS) of BabySoC
 
 > **Reference:** [GLS Flow and Methodology](https://github.com/Ananya-KM/VSD_HDP/blob/main/Day%206.md)  
 > **Objective:** Perform Gate-Level Simulation (GLS) on the synthesized BabySoC to verify post-synthesis functionality and timing accuracy.
@@ -50,6 +50,8 @@ read_verilog ./src/module/vsdbabysoc.v
 read_verilog -I ./src/include ./src/module/rvmyth.v
 read_verilog -I ./src/include ./src/module/clk_gate.v
 ```
+<img width="866" height="629" alt="Synthesis_logs1" src="https://github.com/user-attachments/assets/7e6fc03e-116d-4beb-83bf-adf357887735" />
+
 
 ---
 
@@ -60,6 +62,8 @@ read_liberty -lib ./src/lib/avsdpll.lib
 read_liberty -lib ./src/lib/avsddac.lib
 read_liberty -lib ./src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
+<img width="866" height="629" alt="Synthesis_logs2" src="https://github.com/user-attachments/assets/b535a491-7660-47f2-9aed-27d675965bff" />
+
 
 ---
 
@@ -68,6 +72,13 @@ read_liberty -lib ./src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```bash
 synth -top vsdbabysoc
 ```
+<img width="1534" height="868" alt="Synthesis_logs3" src="https://github.com/user-attachments/assets/6bfbcfc6-ca25-4d9b-9333-f28390ed7302" /> 
+
+<img width="1534" height="868" alt="Synthesis_logs4" src="https://github.com/user-attachments/assets/88ab29f6-42cf-48ae-9648-ed890a46f372" />
+
+<img width="1534" height="868" alt="Synthesis_logs5" src="https://github.com/user-attachments/assets/785272be-1295-456f-b057-bd9330be8a48" />
+
+
 
 ---
 
@@ -76,6 +87,8 @@ synth -top vsdbabysoc
 ```bash
 dfflibmap -liberty ./src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
+<img width="1534" height="868" alt="Synthesis_logs6" src="https://github.com/user-attachments/assets/fdc9c184-0207-4b8d-8739-a576c9e62af3" />
+
 
 ---
 
@@ -85,6 +98,8 @@ dfflibmap -liberty ./src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 opt
 abc -liberty ./src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -script +strash;scorr;ifraig;retime;{D};strash;dch,-f;map,-M,1,{D}
 ```
+<img width="866" height="629" alt="Synthesis_logs7" src="https://github.com/user-attachments/assets/455b0a57-e40f-405e-8619-25abe1adee52" />
+
 
 ---
 
@@ -96,6 +111,8 @@ setundef -zero
 clean -purge
 rename -enumerate
 ```
+<img width="866" height="629" alt="Synthesis_logs8" src="https://github.com/user-attachments/assets/1c555a33-f46c-464d-bb9b-855d45c540fc" />
+
 
 ---
 
@@ -104,8 +121,11 @@ rename -enumerate
 ```bash
 stat
 ```
+<img width="1534" height="868" alt="Synthesis_logs9" src="https://github.com/user-attachments/assets/37772936-80c3-4da4-b691-3a3eded06a5f" />
 
-View the number of cells, gates, and nets to ensure synthesis success.
+<img width="1534" height="868" alt="Synthesis_logs10" src="https://github.com/user-attachments/assets/24d6633c-280b-4a6c-9f89-8f9a19998715" />
+
+Shows the number of cells, gates, and nets to ensure synthesis success.
 
 ---
 
@@ -114,8 +134,9 @@ View the number of cells, gates, and nets to ensure synthesis success.
 ```bash
 write_verilog -noattr ./output/post_synth_sim/vsdbabysoc.synth.v
 ```
+<img width="866" height="629" alt="Synthesis_logs11" src="https://github.com/user-attachments/assets/194caa0e-9ec4-4c68-aa69-beea12086663" />
 
-This file is your **post-synthesis gate-level netlist** ready for simulation.
+This file is the **post-synthesis gate-level netlist** ready for simulation.
 
 ---
 
@@ -141,6 +162,8 @@ iverilog -o ./output/post_synth_sim/post_synth_sim.out \
 | `-I ./src/gls_model` | Includes `primitives.v` for gate definitions |
 
 ---
+<img width="866" height="670" alt="Synthesis_logs12" src="https://github.com/user-attachments/assets/cf1a7938-adc4-411b-a52e-9933f3eed2cc" />
+
 
 ### 📁 Step 2: Navigate to Simulation Output Directory
 
@@ -165,8 +188,22 @@ Generates `post_synth_sim.vcd` waveform file.
 ```bash
 gtkwave post_synth_sim.vcd
 ```
+<img width="1600" height="900" alt="Synthesis_logs13" src="https://github.com/user-attachments/assets/3489d577-3768-4b9a-8ac4-35bfe05c4e15" />
+<img width="1600" height="900" alt="Synthesis_logs14" src="https://github.com/user-attachments/assets/801bc617-6e20-4931-9778-89fa82e0bdac" />
 
+####Functional simulation output (Week 2 task):
+<img width="1600" height="900" alt="post_synth_sim" src="https://github.com/user-attachments/assets/03e98ceb-245d-44af-a2e9-6e1ad1ca7ccc" />
 
+###The waveforms obtained from GLS matched exactly with those from the functional simulation, confirming that the synthesized netlist preserves the original RTL functionality.
+
+This indicates that:
+
+* The synthesis process did not introduce any logical errors.
+* The design functionality remains consistent before and after synthesis.
+* The simulation environment (testbench and stimulus) was correctly applied in both cases.
+
+✅ Conclusion:
+The matching waveforms validate the correctness of synthesis and ensure that the post-synthesis design behaves as intended, confirming successful functional equivalence between RTL and GLS outputs.
 
 ---
 
