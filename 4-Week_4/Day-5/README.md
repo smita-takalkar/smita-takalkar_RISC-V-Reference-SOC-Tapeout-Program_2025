@@ -1,5 +1,12 @@
-Day5
-<img width="1534" height="868" alt="Screenshot from 2025-10-18 00-27-16" src="https://github.com/user-attachments/assets/fba633c7-4c48-4a2c-ad44-966514b5b041" />
-<img width="1534" height="868" alt="Screenshot from 2025-10-18 00-27-28" src="https://github.com/user-attachments/assets/db853b19-34f4-4c3d-a195-af5099d1898a" />
-<img width="1534" height="868" alt="Screenshot from 2025-10-18 00-28-29" src="https://github.com/user-attachments/assets/a30e15a6-57f8-4847-abbe-72da7b4d0e57" />
-<img width="1600" height="900" alt="Screenshot from 2025-10-18 00-33-10" src="https://github.com/user-attachments/assets/180bef3c-f671-44d0-8d93-8da708632699" />
+# Day5
+## Supply Variations: 
+
+<img width="1534" height="868" alt="Screenshot from 2025-10-18 00-36-49" src="https://github.com/user-attachments/assets/873ccc12-5d71-4a55-8889-0de2d6b6c507" />
+<img width="1534" height="868" alt="Screenshot from 2025-10-18 00-36-57" src="https://github.com/user-attachments/assets/a0ceee0b-872c-4ebf-b486-94ab59d7b60e" />
+<img width="1600" height="900" alt="Screenshot from 2025-10-18 00-38-52" src="https://github.com/user-attachments/assets/85a6b39e-d2cf-4146-9fa8-368b8ffcf75d" />
+<img width="1600" height="900" alt="Screenshot from 2025-10-18 00-42-04" src="https://github.com/user-attachments/assets/2ca50bbf-987e-4365-a7ce-311dd26a7a41" />
+
+## Device Variation 
+<img width="1534" height="868" alt="Screenshot from 2025-10-18 00-47-25" src="https://github.com/user-attachments/assets/5123fae3-cfb7-445e-b6d3-89df8465f3bc" />
+<img width="1534" height="868" alt="Screenshot from 2025-10-18 00-47-58" src="https://github.com/user-attachments/assets/3d6cc0ab-bd12-4797-bfde-f1325de49e13" />
+<img width="1600" height="900" alt="Screenshot from 2025-10-18 00-52-05" src="https://github.com/user-attachments/assets/e47e7246-e285-486f-8ca0-ddea65172c06" />
