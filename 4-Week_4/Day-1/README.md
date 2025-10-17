@@ -1,4 +1,5 @@
 DAY 1
+<img width="1534" height="868" alt="Screenshot from 2025-10-17 17-00-18" src="https://github.com/user-attachments/assets/fa98e074-41ba-48ee-82e1-26951d2b14b9" />
 
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-01-42" src="https://github.com/user-attachments/assets/e4aa2a14-8a5f-46e3-afe3-a9e258ceac1e" />
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-06-11" src="https://github.com/user-attachments/assets/b094f304-8729-4ebf-8197-3841f7ae6b42" />
