@@ -9,4 +9,4 @@
 ## Device Variation 
 <img width="1534" height="868" alt="Screenshot from 2025-10-18 00-47-25" src="https://github.com/user-attachments/assets/5123fae3-cfb7-445e-b6d3-89df8465f3bc" />
 <img width="1534" height="868" alt="Screenshot from 2025-10-18 00-47-58" src="https://github.com/user-attachments/assets/3d6cc0ab-bd12-4797-bfde-f1325de49e13" />
-<img width="1600" height="900" alt="Screenshot from 2025-10-18 00-52-05" src="https://github.com/user-attachments/assets/e47e7246-e285-486f-8ca0-ddea65172c06" />
+<img width="1600" height="900" alt="Screenshot from 2025-10-18 00-53-24" src="https://github.com/user-attachments/assets/6f5a04ba-e8ea-423f-b18f-4413fed62219" />
