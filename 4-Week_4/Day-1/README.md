@@ -1,22 +1,39 @@
 # DAY 1 -Lab 1 SPICE SIMULATION WITH SKY130
 
+### 🔧 **Commands and Explanation**
 
+```bash
+cd vsdtapeout/
+```
+
+Navigate into the **VSDTapeout** workspace directory.
+This is the main working folder where you’ll set up and run all design-related commands.
+
+---
+
+```bash
 git clone https://github.com/kunalg123/sky130CircuitDesignWorkshop.git
-Clone the Sky130 Circuit Design Workshop repository from GitHub.
-This repository contains design examples, SPICE netlists, and model files needed for transistor-level simulation using the SkyWater SKY130 PDK.
+```
 
-📁 After cloning, a new folder named sky130CircuitDesignWorkshop will be created inside vsdtapeout.
+Clone the **Sky130 Circuit Design Workshop** repository from GitHub.
+This repository contains design examples, SPICE netlists, and model files needed for transistor-level simulation using the **SkyWater SKY130 PDK**.
 
-bash
+> 📁 After cloning, a new folder named `sky130CircuitDesignWorkshop` will be created inside `vsdtapeout`.
 
+---
+
+```bash
 cd sky130CircuitDesignWorkshop/design/sky130_fd_pr/cells/nfet_01v8/
-Navigate to the NMOS device cell directory within the cloned repository.
-This path contains device model files for the 1.8V NMOS transistor (nfet_01v8) — including its SPICE model definitions and corner files used for simulation across different process variations.
+```
 
-📂 sky130_fd_pr → Standard device library from the SkyWater PDK
+Navigate to the **NMOS device cell directory** within the cloned repository.
+This path contains **device model files** for the **1.8V NMOS transistor (`nfet_01v8`)** — including its SPICE model definitions and corner files used for simulation across different process variations.
 
-📂 cells/nfet_01v8 → Directory containing NMOS device SPICE definitions
+> 📂 `sky130_fd_pr` → Standard device library from the SkyWater PDK
+>
+> 📂 `cells/nfet_01v8` → Directory containing NMOS device SPICE definitions
 
+---
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-00-18" src="https://github.com/user-attachments/assets/fa98e074-41ba-48ee-82e1-26951d2b14b9" />
 
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-06-23" src="https://github.com/user-attachments/assets/fd72e8e1-f613-43be-aad4-31122f76be5a" />
