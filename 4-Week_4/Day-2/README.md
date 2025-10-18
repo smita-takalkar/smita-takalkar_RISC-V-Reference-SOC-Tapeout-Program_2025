@@ -62,6 +62,7 @@ plots the **current flowing through the voltage source named `Vdd`**.
 
 So, this plot represents **Id vs. Vds (drain current vs. drain voltage)** for the NMOS transistor.
 The lower values showing quadratic behavior nad higher values showing liner behavior
+
 ---
 <img width="1600" height="900" alt="Screenshot from 2025-10-17 22-54-08" src="https://github.com/user-attachments/assets/991e773f-7922-4caa-a503-2de155f88164" />
 <img width="1600" height="900" alt="Screenshot from 2025-10-17 22-54-44" src="https://github.com/user-attachments/assets/c3924364-452f-4217-b5dc-0ba58177eff7" />
