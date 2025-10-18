@@ -63,6 +63,15 @@ View the **corner configuration file** for the same NMOS device.
 This file references the `.pm3.spice` model and specifies **corner-based simulation conditions** (TT, SS, FF, etc.), defining how the device behaves under **process variations** like faster or slower transistor characteristics.
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-06-23" src="https://github.com/user-attachments/assets/fd72e8e1-f613-43be-aad4-31122f76be5a" />
 
+```bash
+less all.spice
+```
+* The file `all.spice` is typically a **consolidated SPICE file** that includes **all device models, corners, and library references** needed for circuit simulations.
+* Unlike `sky130.lib.spice`, which mainly references other model files, `all.spice` often **combines multiple `.spice` files** into a single file for convenience. This is useful for:
+
+  * Running **Ngspice simulations** without repeatedly including multiple files
+  * Having a **ready-to-use library** with all NMOS, PMOS, and other device parameters
+  * Ensuring all **corner models** are available in one file
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-01-42" src="https://github.com/user-attachments/assets/e4aa2a14-8a5f-46e3-afe3-a9e258ceac1e" />
 
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-06-11" src="https://github.com/user-attachments/assets/b094f304-8729-4ebf-8197-3841f7ae6b42" />
