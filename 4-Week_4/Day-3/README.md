@@ -11,6 +11,8 @@ plot out vs in
 ```
 <img width="1534" height="868" alt="Screenshot from 2025-10-18 00-11-03" src="https://github.com/user-attachments/assets/0e9d4299-6d51-4c60-9f3e-e898e8b15c64" />
 <img width="1534" height="868" alt="Screenshot from 2025-10-18 00-13-03" src="https://github.com/user-attachments/assets/17ac210b-1575-451b-a8d8-4f00bff2c25b" />
+<img width="953" height="576" alt="Screenshot from 2025-10-19 00-13-44" src="https://github.com/user-attachments/assets/56d11cd8-e071-47ca-8624-af93f37a6307" />
+
 In the **VTC (Voltage Transfer Characteristic)** graph, the **switching threshold voltage** is the point where
 `Vin = Vout`, which occurs approximately at **(0.876 V, 0.876 V)**.
 Graph:
