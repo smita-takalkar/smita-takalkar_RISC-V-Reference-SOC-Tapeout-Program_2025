@@ -63,9 +63,20 @@ View the **corner configuration file** for the same NMOS device.
 This file references the `.pm3.spice` model and specifies **corner-based simulation conditions** (TT, SS, FF, etc.), defining how the device behaves under **process variations** like faster or slower transistor characteristics.
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-06-23" src="https://github.com/user-attachments/assets/fd72e8e1-f613-43be-aad4-31122f76be5a" />
 
-
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-01-42" src="https://github.com/user-attachments/assets/e4aa2a14-8a5f-46e3-afe3-a9e258ceac1e" />
+
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-06-11" src="https://github.com/user-attachments/assets/b094f304-8729-4ebf-8197-3841f7ae6b42" />
+
+
+```bash
+cd ../../models/
+less sky130.lib.spice
+```
+
+   * Opens the **master library file** for the PDK in a scrollable viewer.
+   * This file organizes references to **process corner model files** (TT, FF, SS, FS, SF) and serves as the main include file for Ngspice simulations.
+
+This tells Ngspice which SPICE files to use for each corner, allowing accurate simulation of NMOS, PMOS, and other devices under **typical and extreme fabrication conditions**.
 
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-08-08" src="https://github.com/user-attachments/assets/8c49e86f-c1ef-410a-8a10-084aa574754d" />
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-08-35" src="https://github.com/user-attachments/assets/68aadaba-1a60-4f76-aa3a-55c010278313" />
