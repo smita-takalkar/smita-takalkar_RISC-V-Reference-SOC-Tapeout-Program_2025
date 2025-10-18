@@ -36,7 +36,34 @@ This path contains **device model files** for the **1.8V NMOS transistor (`nfet_
 ---
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-00-18" src="https://github.com/user-attachments/assets/fa98e074-41ba-48ee-82e1-26951d2b14b9" />
 
+
+```bash
+less sky130_fd_pr__nfet_01v8__tt.pm3.spice
+```
+
+Open the **TT (Typical-Typical) process model file** for the NMOS device in a scrollable viewer (`less`).
+This `.pm3.spice` file defines the **physical and electrical parameters** used by Ngspice for simulations under the **typical process corner**, such as:
+
+* Threshold voltage
+* Mobility parameters
+* Capacitances
+* Channel length modulation, etc.
+
+These parameters are crucial for **accurate device-level simulation** in the 130nm process node.
+
+> The `less` command is used here because model files are long and read-only — it allows easy scrolling and searching without accidentally modifying the file.
+
+---
+
+```bash
+less sky130_fd_pr__nfet_01v8__tt.corner.spice
+```
+
+View the **corner configuration file** for the same NMOS device.
+This file references the `.pm3.spice` model and specifies **corner-based simulation conditions** (TT, SS, FF, etc.), defining how the device behaves under **process variations** like faster or slower transistor characteristics.
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-06-23" src="https://github.com/user-attachments/assets/fd72e8e1-f613-43be-aad4-31122f76be5a" />
+
+
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-01-42" src="https://github.com/user-attachments/assets/e4aa2a14-8a5f-46e3-afe3-a9e258ceac1e" />
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-06-11" src="https://github.com/user-attachments/assets/b094f304-8729-4ebf-8197-3841f7ae6b42" />
 
