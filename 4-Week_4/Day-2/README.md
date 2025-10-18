@@ -50,6 +50,19 @@ When executed, Ngspice will:
 ---
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 22-53-12" src="https://github.com/user-attachments/assets/a0ff0d74-ed58-4fe8-82dc-e40758c9bf77" />
 
+In Ngspice,
+```
+plot -vdd#branch
+```
+
+plots the **current flowing through the voltage source named `Vdd`**.
+
+* The **negative sign (-)** is used because Ngspice defines current **entering the positive terminal** of the voltage source as positive.
+* To get the **drain current (Id)** (flowing *out* of the transistor into Vdd), you invert the sign — hence `-vdd#branch`.
+
+So, this plot represents **Id vs. Vds (drain current vs. drain voltage)** for the NMOS transistor.
+The lower values showing quadratic behavior nad higher values showing liner behavior
+---
 <img width="1600" height="900" alt="Screenshot from 2025-10-17 22-54-08" src="https://github.com/user-attachments/assets/991e773f-7922-4caa-a503-2de155f88164" />
 <img width="1600" height="900" alt="Screenshot from 2025-10-17 22-54-44" src="https://github.com/user-attachments/assets/c3924364-452f-4217-b5dc-0ba58177eff7" />
 <img width="1600" height="900" alt="Screenshot from 2025-10-17 22-55-39" src="https://github.com/user-attachments/assets/89d93981-ff59-4ece-9e3d-7ee6e9ef2077" />
