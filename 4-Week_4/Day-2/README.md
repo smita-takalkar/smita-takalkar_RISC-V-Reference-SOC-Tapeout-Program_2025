@@ -1,4 +1,4 @@
-# DAY 2 
+# 📈 Day 2 – Short Channel NMOS (L = 0.15 µm, W = 0.39 µm) Simulation
 ## PLOTTING Id vs Vds
 
 ```bash
