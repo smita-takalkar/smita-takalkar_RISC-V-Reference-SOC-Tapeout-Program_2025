@@ -39,7 +39,38 @@ This helps analyze how the inverter **response changes with varying supply volta
 <img width="1600" height="900" alt="Screenshot from 2025-10-18 00-42-04" src="https://github.com/user-attachments/assets/2ca50bbf-987e-4365-a7ce-311dd26a7a41" />
 
 
-## Device Variation 
+## 🏗️ **Lab 2 – Sky130 Device Variation Labs**
+
+---
+
+### 🔹 **Observing VTC Curve for Device Variation**
+
+```bash
+vim day5_inv_devicevariation_wp7_wn042.spice
+ngspice day5_inv_devicevariation_wp7_wn042.spice
+plot out vs in
+```
+
+* In this lab, the **PFET size** is significantly larger compared to the **NFET**.
+* The **VTC (Voltage Transfer Characteristic) curve** is analyzed to observe the effect of device sizing on inverter behavior.
+
+---
+
+### 🔹 **Observations from the Graph**
+
+* **Output holds high longer** due to the larger PFET compared to the NFET.
+* **Switching threshold shifts to the right**, indicating the PFET is stronger and NFET is weaker.
+* The **threshold voltage difference** is approximately `0.988 – 0.9 ≈ 0.088 V`, showing robust CMOS operation.
+
+---
+
+### 🔹 **Conclusion**
+
+* A **larger PFET** increases the strength of the pull-up network.
+* The CMOS inverter remains **robust**, with clear logic levels and strong noise margins.
+* Proper device sizing ensures **balanced performance and reliable switching**.
+
+---
 <img width="1534" height="868" alt="Screenshot from 2025-10-18 00-47-25" src="https://github.com/user-attachments/assets/5123fae3-cfb7-445e-b6d3-89df8465f3bc" />
 <img width="1534" height="868" alt="Screenshot from 2025-10-18 00-47-58" src="https://github.com/user-attachments/assets/3d6cc0ab-bd12-4797-bfde-f1325de49e13" />
 <img width="1600" height="900" alt="Screenshot from 2025-10-18 00-53-24" src="https://github.com/user-attachments/assets/6f5a04ba-e8ea-423f-b18f-4413fed62219" />
