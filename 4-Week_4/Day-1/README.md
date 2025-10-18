@@ -91,6 +91,30 @@ This tells Ngspice which SPICE files to use for each corner, allowing accurate s
 
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-08-08" src="https://github.com/user-attachments/assets/8c49e86f-c1ef-410a-8a10-084aa574754d" />
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-08-35" src="https://github.com/user-attachments/assets/68aadaba-1a60-4f76-aa3a-55c010278313" />
+
+Here’s how you can document and explain this next step in your **README.md**:
+
+---
+
+### ✏️ **Create or Edit a SPICE Netlist**
+
+```bash
+cd ../../
+vim day1_nfet_idvds_L2_W5.spice
+```
+   * Opens the **Vim editor** to **create or edit** a SPICE netlist file named `day1_nfet_idvds_L2_W5.spice`.
+   * The filename suggests the simulation goal:
+
+     * `nfet` → NMOS transistor
+     * `idvds` → I–V curve (Drain current vs. Drain voltage)
+     * `L2_W5` → Transistor dimensions (Length = 2 units, Width = 5 units)
+> After saving this file, you can run the simulation in Ngspice with:
+
+```bash
+ngspice day1_nfet_idvds_L2_W5.spice
+```
+This will generate the **I–V curve** for the NMOS transistor with the given dimensions.
+
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-10-23" src="https://github.com/user-attachments/assets/5393c823-4b0f-42fb-8d4b-611be48bd613" />
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-21-46" src="https://github.com/user-attachments/assets/12dcad79-4966-4b4a-95b1-005d1ba616e5" />
 <img width="1600" height="900" alt="Screenshot from 2025-10-17 17-22-51" src="https://github.com/user-attachments/assets/8c5b4a9c-4d33-45db-9315-fc9f31c6bb10" />
