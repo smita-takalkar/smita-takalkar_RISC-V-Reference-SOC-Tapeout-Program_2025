@@ -73,3 +73,6 @@ The lower values showing quadratic behavior nad higher values showing liner beha
 <img width="1600" height="900" alt="Screenshot from 2025-10-17 22-55-39" src="https://github.com/user-attachments/assets/89d93981-ff59-4ece-9e3d-7ee6e9ef2077" />
 <img width="1600" height="900" alt="Screenshot from 2025-10-17 22-56-48" src="https://github.com/user-attachments/assets/42db245b-0e1a-4f84-ae4a-1626bd18fbc8" />
 <img width="1600" height="900" alt="Screenshot from 2025-10-17 22-57-52" src="https://github.com/user-attachments/assets/1543a726-a5e0-418b-b958-3c0727cbd1b8" />
+📊 Observation
+
+Since the channel length is 0.15 µm (short-channel device), the Id vs Vgs graph exhibits a linear behavior instead of the ideal quadratic relation seen in long-channel MOSFETs.
