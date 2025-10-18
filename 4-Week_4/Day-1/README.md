@@ -76,6 +76,7 @@ less all.spice
 
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-06-11" src="https://github.com/user-attachments/assets/b094f304-8729-4ebf-8197-3841f7ae6b42" />
 
+<img width="1534" height="868" alt="Screenshot from 2025-10-17 17-08-08" src="https://github.com/user-attachments/assets/8c49e86f-c1ef-410a-8a10-084aa574754d" />
 
 ```bash
 cd ../../models/
@@ -86,8 +87,6 @@ less sky130.lib.spice
    * This file organizes references to **process corner model files** (TT, FF, SS, FS, SF) and serves as the main include file for Ngspice simulations.
 
 This tells Ngspice which SPICE files to use for each corner, allowing accurate simulation of NMOS, PMOS, and other devices under **typical and extreme fabrication conditions**.
-
-<img width="1534" height="868" alt="Screenshot from 2025-10-17 17-08-08" src="https://github.com/user-attachments/assets/8c49e86f-c1ef-410a-8a10-084aa574754d" />
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-08-35" src="https://github.com/user-attachments/assets/68aadaba-1a60-4f76-aa3a-55c010278313" />
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-10-23" src="https://github.com/user-attachments/assets/5393c823-4b0f-42fb-8d4b-611be48bd613" />
 <img width="1534" height="868" alt="Screenshot from 2025-10-17 17-21-46" src="https://github.com/user-attachments/assets/12dcad79-4966-4b4a-95b1-005d1ba616e5" />
