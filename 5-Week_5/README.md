@@ -54,6 +54,8 @@ This task focuses on installing and setting up **OpenROAD Flow Scripts** for end
 git clone https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts.git
 cd OpenROAD-flow-scripts
 ```
+![WhatsApp Image 2025-10-25 at 11 25 37 PM](https://github.com/user-attachments/assets/9be1516c-233f-4f5b-846f-b2155d50b243)
+
 
 ---
 
