@@ -34,5 +34,79 @@ Floorplanning and placement are key backend stages that define:
 - Generate placement results and verify congestion and timing data.  
 - Save reports and logs for documentation and analysis.  
 
+# 🧩 ** OpenROAD Flow Scripts Installation**
+
+## 📘 **Objective**
+
+This task focuses on installing and setting up **OpenROAD Flow Scripts** for end-to-end physical design automation. The goal is to prepare the environment for running the OpenROAD flow on a given design and understand its flow structure.
+
 ---
+
+## ⚙️ **Task Components**
+
+### **1️⃣ Install OpenROAD Flow Scripts**
+
+
+
+### **🔹 Step 1: Clone the Repository**
+
+```bash
+git clone https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts.git
+cd OpenROAD-flow-scripts
+```
+
+---
+
+### **🔹 Step 2: Install Prerequisites**
+
+Before building OpenROAD, ensure the following dependencies are installed:
+
+```bash
+sudo apt update
+sudo apt install -y build-essential cmake python3 python3-venv \
+tcl-dev tk-dev swig bison flex libreadline-dev gawk \
+libffi-dev git
+```
+
+> 💡 *Refer to the [reference repository prerequisites](https://github.com/spatha0011/spatha_vsd-hdp/blob/main/Day14/README.md) for detailed dependency versions.*
+
+---
+
+### **🔹 Step 3: Initialize Submodules**
+
+```bash
+git submodule init
+git submodule update
+```
+
+---
+
+### **🔹 Step 4: Build OpenROAD**
+
+Use the flow’s built-in script to build the complete toolchain:
+
+```bash
+make
+```
+
+
+
+### **🔹 Step 5: Verify Installation**
+
+To verify successful installation:
+
+```bash
+./flow.tcl -help
+```
+
+
+
+
+## 📂 **Reference**
+
+🔗 [OpenROAD Reference – spatha_vsd-hdp Day 14](https://github.com/spatha0011/spatha_vsd-hdp/blob/main/Day14/README.md)
+🔗 [Official OpenROAD GitHub Repository](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts)
+
+---
+
 
