@@ -71,6 +71,23 @@ libffi-dev git
 ```
 
 > 💡 *Refer to the [reference repository prerequisites](https://github.com/spatha0011/spatha_vsd-hdp/blob/main/Day14/README.md) for detailed dependency versions.*
+<img width="1534" height="868" alt="Screenshot from 2025-10-25 18-09-26" src="https://github.com/user-attachments/assets/02af9591-9879-49f2-9543-aee789cf4b8a" />
+<img width="1534" height="868" alt="Screenshot from 2025-10-25 18-11-02" src="https://github.com/user-attachments/assets/82c685b2-bcde-4c26-9347-f2cb93ff997c" />
+<img width="1534" height="868" alt="Screenshot from 2025-10-25 18-11-29" src="https://github.com/user-attachments/assets/081194a6-cd3b-43f1-9dd6-33957125a826" />
+<img width="1534" height="868" alt="Screenshot from 2025-10-25 18-19-44" src="https://github.com/user-attachments/assets/32da1b53-831c-442c-ab74-4a5672d0d53d" />
+<img width="1534" height="868" alt="Screenshot from 2025-10-25 18-27-31" src="https://github.com/user-attachments/assets/06230d29-e4e6-4e18-bced-0654feaf8dc6" />
+<img width="1534" height="868" alt="Screenshot from 2025-10-25 20-20-03" src="https://github.com/user-attachments/assets/ab9a4c68-a281-4d3f-9a8b-f2a1d4b893e5" />
+<img width="1534" height="868" alt="Screenshot from 2025-10-25 20-28-21" src="https://github.com/user-attachments/assets/17477cad-34f1-41ce-9f4d-1a878695256c" />
+
+Compiler ERROR:
+<img width="1534" height="868" alt="Screenshot from 2025-10-25 20-33-10" src="https://github.com/user-attachments/assets/1c8f2e22-212e-452c-979f-f48acc727227" />
+Solution:
+<img width="1534" height="868" alt="Screenshot from 2025-10-25 20-53-14" src="https://github.com/user-attachments/assets/c9512bcd-8165-4425-a961-4cbe70ec1224" />
+<img width="1534" height="868" alt="Screenshot from 2025-10-25 20-54-39" src="https://github.com/user-attachments/assets/129ef076-2c19-4157-9b50-3c937ce3cf6c" />
+<img width="1534" height="868" alt="Screenshot from 2025-10-25 20-59-36" src="https://github.com/user-attachments/assets/50a31e8e-ba9d-4b5c-9c9f-7e7e8a600a65" />
+<img width="1534" height="868" alt="Screenshot from 2025-10-25 21-08-20" src="https://github.com/user-attachments/assets/04bf99c6-45e9-415b-b56f-e8c9053000e7" />
+<img width="1600" height="868" alt="Screenshot from 2025-10-25 21-42-33" src="https://github.com/user-attachments/assets/c1b954e0-3baf-4059-82d8-6102f8deb81d" />
+
 
 ---
 
