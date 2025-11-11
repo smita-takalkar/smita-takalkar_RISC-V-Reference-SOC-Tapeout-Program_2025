@@ -40,7 +40,8 @@ After synthesis, OpenLANE generates the **gate-level netlist** and various repor
 
 ## 📊 **Synthesis Result Characterization**
 **Formula:**
-Flop Ratio = (Number of D Flip-Flops / Total Number of Cells) × 100
+Flop Ratio = (Number of D Flip-Flops / Total Number of Cells) × 100 
+
 Flop Ratio = (1613 / 14876) × 100 = 10.84%
 
 | Parameter      | Value      |
