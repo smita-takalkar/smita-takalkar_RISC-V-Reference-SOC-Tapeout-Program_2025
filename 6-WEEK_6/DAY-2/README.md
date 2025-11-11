@@ -196,7 +196,20 @@ To view placement:
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
 ```
 <img width="1280" height="768" alt="Screenshot from 2025-11-11 18-42-20" src="https://github.com/user-attachments/assets/e6ceb4ce-abbf-4c56-9537-28648d9fa8bd" />
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 18-44-09" src="https://github.com/user-attachments/assets/c0543e88-cf90-4926-b9f3-e7546526a580" />
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 18-42-39" src="https://github.com/user-attachments/assets/42756a64-ed18-4017-badf-cf847e346a1b" />
 
 ---
+ioPlacer supports 4 pin strategies we can also change it 
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-07-20" src="https://github.com/user-attachments/assets/2b5b4085-c8df-4952-8817-856cf1fc6fc9" />
+here env(FP_IO_MODE) 1, Means cells are placed randomly at equidistant
+
+to change the cell strategy :
+```bash
+% set ::env(FP_IO_MODE) 2
+```
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-08-24" src="https://github.com/user-attachments/assets/482243a0-411e-4535-b86f-b19c0538bd92" />
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-09-37" src="https://github.com/user-attachments/assets/a0fd03c2-bac6-4a49-b940-27ace6a1e4c3" />
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-10-53" src="https://github.com/user-attachments/assets/de9f7abf-420e-411a-a339-269900ceba3e" />
 
 
