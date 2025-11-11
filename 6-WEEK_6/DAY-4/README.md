@@ -1,8 +1,3 @@
-Perfect 👍 Here are **two separate, polished and visually engaging GitHub-style README files** for **DAY 4** and **DAY 5** of your VSD Physical Design documentation series.
-They follow the same professional format as your earlier ones for consistency, clarity, and presentation.
-
----
-
 ## 🧭 **DAY 4 – Pre-Layout Timing Analysis and Importance of a Good Clock Tree**
 
 ---
@@ -190,13 +185,5 @@ report_checks -path_delay min_max
 
 ---
 
-✅ **End of DAY 4 Summary**
-
-* Explored **pre-layout timing**, **delay modelling**, and **clock-tree synthesis**.
-* Learned how to perform **timing analysis** using **OpenSTA** for both ideal and real clocks.
-
----
-
----
 
 
