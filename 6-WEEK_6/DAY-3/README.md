@@ -22,8 +22,7 @@ to change the cell strategy :
 <img width="1280" height="768" alt="Screenshot from 2025-11-11 19-09-37" src="https://github.com/user-attachments/assets/a0fd03c2-bac6-4a49-b940-27ace6a1e4c3" />
 <img width="1280" height="768" alt="Screenshot from 2025-11-11 19-10-53" src="https://github.com/user-attachments/assets/de9f7abf-420e-411a-a339-269900ceba3e" />
 
-
-
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-29-25" src="https://github.com/user-attachments/assets/a4fd993b-2736-4ad3-a4a3-6461d28fe77d" />
 
 ---
 
@@ -151,6 +150,30 @@ cd vsdstdcelldesign
 <img width="1280" height="768" alt="Screenshot from 2025-11-11 19-19-05 (1)" src="https://github.com/user-attachments/assets/2e3388b3-1230-4762-b0b6-c5080fe13b2e" />
 <img width="1280" height="768" alt="Screenshot from 2025-11-11 19-26-31" src="https://github.com/user-attachments/assets/b5004871-fc19-4ed3-b7d1-2b71497cc0cb" />
 <img width="1280" height="768" alt="Screenshot from 2025-11-11 19-26-44" src="https://github.com/user-attachments/assets/07c25d56-2bd4-4c01-afe8-be7636fd3531" />
+To know the name select the part and in Tkcon window
+```bash
+% what
+```
+nmos:
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-40-06" src="https://github.com/user-attachments/assets/e02dc5d8-5659-420e-be51-d8047b8b485e" />
+pmos:
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-40-40 (2)" src="https://github.com/user-attachments/assets/86b123a1-228d-4031-97fe-912db2509610" />
+
+For checking connectivity: press S 3 times, it highlghts all the connected parts
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-45-24 (1)" src="https://github.com/user-attachments/assets/4e16427a-680d-4821-b7b7-4a172f3e21c0" />
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-45-36 (1)" src="https://github.com/user-attachments/assets/ed4b3434-4b9e-4610-8775-16b364817069" />
+
+Licon is the connect between locali and metal1 
+nsubstratecontact ensures the connectivity between nwell and locali 
+
+Steps to Check for DRC Errors:
+1. Click and select any part
+2. Click on DRC Tab
+3. DRC Find next error
+4. In Tkcon window it mentions the error if there is any
+   Final design should be DRC error free 
+
+
 
 
 * Generate **Layout Exchange Format (LEF)** files for cell integration.
@@ -158,7 +181,7 @@ cd vsdstdcelldesign
 ---
 
 ### 🧰 **47 – Lab Steps to Create Standard Cell Layout & Extract SPICE Netlist**
-
+To know the logical function of Inverter we need to extarct the design in SPICE and do simulation in SPICE
 1. Create the inverter layout in Magic.
 2. Label **input, output, and power pins**.
 3. Extract the **SPICE netlist** for simulation.
@@ -168,6 +191,9 @@ cd vsdstdcelldesign
    ext2spice cthresh 0 rthresh 0
    ext2spice
    ```
+<img width="1920" height="923" alt="VirtualBox_vsdworkshop_11_11_2025_21_52_28" src="https://github.com/user-attachments/assets/4c4c4b56-9cde-4510-8f70-2e17181314e8" />
+<img width="1920" height="923" alt="VirtualBox_vsdworkshop_11_11_2025_22_05_38" src="https://github.com/user-attachments/assets/53cd7dac-d833-4e3e-9074-3a516e17342d" />
+
 
 ---
 
