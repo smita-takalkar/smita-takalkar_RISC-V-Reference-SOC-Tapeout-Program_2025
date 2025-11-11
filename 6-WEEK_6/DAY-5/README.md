@@ -89,11 +89,5 @@ run_routing
 
 ---
 
-✅ **End of DAY 5 Summary**
-
-* Completed **power distribution**, **global + detailed routing**, and **post-route DRC**.
-* Achieved full **RTL-to-GDS flow** using OpenLANE + TritonRoute + OpenSTA.
-
----
 
 
