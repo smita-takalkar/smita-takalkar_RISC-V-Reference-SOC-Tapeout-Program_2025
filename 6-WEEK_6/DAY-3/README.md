@@ -10,6 +10,20 @@
 
 * Review placement of **I/O pins** in relation to core and die.
 * Ensure signal integrity and minimum routing congestion.
+* ioPlacer supports 4 pin strategies we can also change it 
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-07-20" src="https://github.com/user-attachments/assets/2b5b4085-c8df-4952-8817-856cf1fc6fc9" />
+here env(FP_IO_MODE) 1, Means cells are placed randomly at equidistant
+
+to change the cell strategy :
+```bash
+% set ::env(FP_IO_MODE) 2
+```
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-08-24" src="https://github.com/user-attachments/assets/482243a0-411e-4535-b86f-b19c0538bd92" />
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-09-37" src="https://github.com/user-attachments/assets/a0fd03c2-bac6-4a49-b940-27ace6a1e4c3" />
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-10-53" src="https://github.com/user-attachments/assets/de9f7abf-420e-411a-a339-269900ceba3e" />
+
+
+
 
 ---
 
@@ -133,6 +147,12 @@ cd vsdstdcelldesign
 ### 💡 **46 – Lab: Introduction to Sky130 Basic Layers, Layout & LEF using Inverter**
 
 * Understand how **Sky130 layers** (nwell, pwell, poly, diffusion, metal layers) are defined in Magic.
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-16-21" src="https://github.com/user-attachments/assets/671d671f-cd73-4b98-889b-54187c580df6" />
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-19-05 (1)" src="https://github.com/user-attachments/assets/2e3388b3-1230-4762-b0b6-c5080fe13b2e" />
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-26-31" src="https://github.com/user-attachments/assets/b5004871-fc19-4ed3-b7d1-2b71497cc0cb" />
+<img width="1280" height="768" alt="Screenshot from 2025-11-11 19-26-44" src="https://github.com/user-attachments/assets/07c25d56-2bd4-4c01-afe8-be7636fd3531" />
+
+
 * Generate **Layout Exchange Format (LEF)** files for cell integration.
 
 ---
