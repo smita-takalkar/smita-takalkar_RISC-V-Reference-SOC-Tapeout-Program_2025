@@ -39,17 +39,15 @@ After synthesis, OpenLANE generates the **gate-level netlist** and various repor
 ---
 
 ## 📊 **Synthesis Result Characterization**
+**Formula:**
+Flop Ratio = (Number of D Flip-Flops / Total Number of Cells) × 100
+Flop Ratio = (1613 / 14876) × 100 = 10.84%
 
 | Parameter      | Value      |
 | -------------- | ---------- |
 | Total Cells    | 14,876     |
 | D Flip-Flops   | 1,613      |
 | **Flop Ratio** | **10.84%** |
-
-**Formula:**
-[
-\text{Flop Ratio} = \frac{\text{No. of D Flip-Flops}}{\text{Total Cells}} \times 100 = \frac{1613}{14876} \times 100 = 10.84%
-]
 
 This metric helps estimate **sequential logic density** in the design — an important factor in timing and power analysis.
 
